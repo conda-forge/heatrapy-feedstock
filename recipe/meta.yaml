@@ -19,12 +19,12 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - numpy ==2.4.2
+    - numpy
   run:
     - python >={{ python_min }}
-    - numpy ==2.4.2
-    - matplotlib-base ==3.10.8
-    - pyparsing ==3.3.2
+    - {{ pin_compatible('numpy') }}
+    - matplotlib-base >=3.10
+    - pyparsing >=3.3
 
 test:
   imports:
