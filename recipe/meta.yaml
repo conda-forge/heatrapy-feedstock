@@ -10,7 +10,6 @@ source:
   sha256: e0a5603aa019d9b64a5bea85eb17864e5cc51fe790e1d2939e4070bfa1be577e
 
 build:
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
   skip: true  # [py != 314]
@@ -22,7 +21,7 @@ requirements:
     - setuptools
     - numpy >=2.4.2
   run:
-    - python >={{ python_min }}
+    - python >=3.14
     - numpy >=2.4.2
     - matplotlib-base >=3.10
     - pyparsing >=3.3
@@ -31,7 +30,7 @@ test:
   imports:
     - heatrapy
   requires:
-    - python {{ python_min }}
+    - python 3.14.*
     - pip
   commands:
     - pip check
