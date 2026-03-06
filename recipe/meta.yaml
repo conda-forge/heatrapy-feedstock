@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python 3.14.*
+    - python
     - pip
     - setuptools
     - numpy >=2.4.2
   run:
-    - python >=3.14
+    - python
     - numpy >=2.4.2
     - matplotlib-base >=3.10
     - pyparsing >=3.3
@@ -30,7 +30,6 @@ test:
   imports:
     - heatrapy
   requires:
-    - python 3.14.*
     - pip
   commands:
     - pip check
@@ -40,8 +39,7 @@ about:
   summary: 'Library for simulating 1D and 2D heat transfer processes'
   description: |
     This package is a module for simulating dynamic 1D and 2D heat
-    transfer processes by using the finite difference method. The
-    package is based on thermal objects.
+    transfer processes by using the finite difference method.
   license: MIT
   license_file: LICENSE
 
