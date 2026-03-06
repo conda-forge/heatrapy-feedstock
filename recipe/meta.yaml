@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python 3.14.*
+    - python
     - pip
     - setuptools
     - numpy >=2.4.2
   run:
-    - python >=3.14
+    - python
     - numpy >=2.4.2
     - matplotlib-base >=3.10
     - pyparsing >=3.3
@@ -30,7 +30,6 @@ test:
   imports:
     - heatrapy
   requires:
-    - python 3.14.*
     - pip
   commands:
     - pip check
