@@ -10,21 +10,14 @@ Package license: MIT
 Summary: Library for simulating 1D and 2D heat transfer processes
 
 This package is a module for simulating dynamic 1D and 2D heat
-transfer processes by using the finite difference method. The
-package is based on thermal objects.
+transfer processes by using the finite difference method.
 
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
-    <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27505&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heatrapy-feedstock?branchName=main">
-      </a>
-    </td>
-  </tr>
+<table>
 </table>
 
 Current release info
