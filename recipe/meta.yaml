@@ -13,16 +13,17 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  skip: true  # [py != 314]
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.14.*
     - pip
     - setuptools
-    - numpy
+    - numpy >=2.4.2
   run:
     - python >={{ python_min }}
-    - numpy
+    - numpy >=2.4.2
     - matplotlib-base >=3.10
     - pyparsing >=3.3
 
