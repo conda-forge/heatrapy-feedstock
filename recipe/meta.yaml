@@ -40,8 +40,7 @@ about:
   summary: 'Library for simulating 1D and 2D heat transfer processes'
   description: |
     This package is a module for simulating dynamic 1D and 2D heat
-    transfer processes by using the finite difference method. The
-    package is based on thermal objects.
+    transfer processes by using the finite difference method.
   license: MIT
   license_file: LICENSE
 
